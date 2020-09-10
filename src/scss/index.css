@@ -75,10 +75,14 @@ main {
   position: relative; }
 
 .main_content_img {
-  width: 30%;
+  width: 25%;
   height: auto;
   position: absolute;
   left: -10%; }
+
+.main_content_img:hover {
+  transform: scale(1.1);
+  transition: 0.2s; }
 
 .img_border {
   width: 100%;
@@ -103,7 +107,7 @@ main {
   width: auto;
   height: 50%;
   position: absolute;
-  left: 27%; }
+  left: 20%; }
 
 .content_1_container {
   width: 100%; }
