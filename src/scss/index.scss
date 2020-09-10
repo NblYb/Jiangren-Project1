@@ -1,7 +1,14 @@
+@import './navBar.scss';
+@import './side.scss';
+@import './home/homePage.scss';
+
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
 
 button {
     margin: 0;
@@ -18,10 +25,16 @@ h1 {
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: None;
 }
 
 html {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
+
+body{
+    height: 100%;
+}
+
