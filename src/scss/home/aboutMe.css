@@ -1,16 +1,15 @@
-.home_page {
+.aboutMe {
   width: 80%;
   min-width: 563px;
   height: 100%;
   display: flex;
   align-items: center;
-  display: None;
   position: relative;
   left: -10%;
 }
 
 @media screen and (max-width: 880px) {
-  .home_page {
+  .aboutMe {
     left: 0;
     flex-wrap: wrap;
   }
