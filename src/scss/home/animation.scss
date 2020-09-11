@@ -1,0 +1,26 @@
+.move_to_left {
+    animation: slide_to_left 1.5s;
+}
+
+.move_to_right {
+    animation: slide_to_right 1.5s;
+}
+
+@keyframes slide_to_left {
+    25% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+@keyframes slide_to_right {
+    25% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: translate(100%);
+    }
+}
+
+
