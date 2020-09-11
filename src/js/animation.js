@@ -27,12 +27,12 @@ const add_animation = (ith_title) => {
             current_box_index = pages[key];
         }
     });
-        if (target_box !== current_box) {
-            target_box.classList.remove("page_inactive");
-            target_box.classList.add("page_active");
-            current_box.classList.remove("page_active");
-            current_box.classList.add("page_inactive");
-        }
+    if (target_box !== current_box) {
+        target_box.classList.remove("page_inactive");
+        target_box.classList.add("page_active");
+        current_box.classList.remove("page_active");
+        current_box.classList.add("page_inactive");
+    }
     // switch (true) {
     //     case (current_box_index < ith_title):
     //         current_box.classList.add("move_to_left");
@@ -53,9 +53,9 @@ const add_animation = (ith_title) => {
     //                 target_box.classList.remove("move_to_left");
     //                 target_box.removeAttribute("style", "left:100%");
     //                 clearTimeout(timer_3);
-    //             }, 1500);
+    //             }, 500);
     //             clearTimeout(timer_2);
-    //         }, 1000);
+    //         }, 600);
     // };
 
 
