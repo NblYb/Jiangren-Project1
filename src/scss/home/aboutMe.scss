@@ -5,6 +5,7 @@
     align-items: center;
 
     position: relative;
+    display: flex;
 
     @media screen and (max-width:880px) {
         left: 0;
@@ -13,13 +14,6 @@
     }
 }
 
-.page_active{
-    display: flex;
-}
-
-.page_inactive{
-    display: None;
-}
 
 
 .about_me_main_content {

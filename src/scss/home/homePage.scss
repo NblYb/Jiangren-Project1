@@ -3,6 +3,7 @@
     min-width: 563px;
     height: 100%;
     align-items: center;
+    display: flex;
 
     position: relative;
     @media screen and (max-width:880px) {
@@ -11,16 +12,6 @@
 
     }
 }
-
-.page_active{
-    display: flex;
-}
-
-.page_inactive{
-    display: None;
-}
-
-
 
 
 .home_page_main_content {

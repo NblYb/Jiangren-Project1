@@ -3,7 +3,7 @@
     min-width: 563px;
     height: 100%;
     align-items: center;
-
+    display: flex;
 
     position: relative;
 
@@ -14,13 +14,7 @@
     }
 }
 
-.page_active{
-    display: flex;
-}
 
-.page_inactive{
-    display: None;
-}
 
 
 
