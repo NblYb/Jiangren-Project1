@@ -15,11 +15,11 @@
 }
 
 .resume_main_content {
-    width: 100%;
+    width: 85%;
     min-width: 563px;
     height: 70%;
     position: relative;
-    background-color: white;
+    background: linear-gradient(to right, white 50%, transparent 100%); 
     padding: 2% 2%;
 
     @media screen and (max-width:880px) {
@@ -49,6 +49,7 @@
     width: 100%;
     height: 50px;
     line-height: 50px;
+
 }
 
 .resume_title_2 {
@@ -63,17 +64,209 @@
     display: flex;
     overflow: scroll;
     flex: 0 0 auto;
+    flex-wrap: wrap;
 }
 
-.resume_education{
+.resume_education {
     width: 50%;
-    height: 200%;
-    background-color: yellow;
+    height: auto;
+    /* background-color: yellow; */
+    flex-shrink: 0;
+
+
+}
+
+.resume_career {
+    width: 50%;
+    height: auto;
+    /* background-color: blue; */
     flex-shrink: 0;
 }
-.resume_career{
+
+.resume_education_title {
+
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 28px;
+    }
+
+    ::after {
+        content: "";
+        width: 40px;
+        height: 2px;
+        background: linear-gradient(to right, rgba(28, 202, 162, 1) 0%, rgba(49, 209, 129, 1) 100%);
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.resume_education_content {
+    width: 90%;
+    height: 800px;
+
+    li {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        padding-left: 10px;
+        margin-top: 40px;
+
+        .start_year {
+            font-size: 16px;
+            position: relative;
+            left: 0px;
+            top: -12px;
+            color: #777777;
+        }
+
+        .end_year {
+            font-size: 16px;
+            position: relative;
+            left: -36px;
+            top: 195px;
+            color: #777777;
+        }
+
+        .side_bar::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            border: 2px solid #777777;
+            position: absolute;
+            left: -5px;
+            top: -8px;
+        }
+
+        .side_bar::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            border: 2px solid #777777;
+            position: absolute;
+            left: -5px;
+            top: 200px;
+        }
+
+        .side_bar {
+            width: 2px;
+            height: 100%;
+            background: #777777;
+            position: relative;
+            left: -30px;
+            top: 0;
+
+        }
+
+        .resume_education_text {
+            width: 100%;
+            height: calc(100%-30px);
+            margin: 10px;
+            background-color: #FBFBFB;
+
+            .degree {
+                margin: 15px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            .school {
+                margin: 15px;
+                font-size: 14px;
+                line-height: 14px;
+                color: #31d181;
+            }
+
+            .description {
+                margin: 15px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #777777;
+            }
+
+        }
+    }
+}
+
+.skill{
     width: 50%;
-    height: 200%;
-    background-color: blue;
+    height: 100%;
+    /* background-color: blue; */
     flex-shrink: 0;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    
+    h2::after {
+        content: "";
+        width: 40px;
+        height: 2px;
+        background: linear-gradient(to right, rgba(28, 202, 162, 1) 0%, rgba(49, 209, 129, 1) 100%);
+        display: block;
+        margin-top: 5px;
+    }
+    
+    h2 span{
+        color: #31d181;
+        
+    }
+
+    .skill_text{
+        width: 90%;
+        font-size:16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #777777;
+        margin-top: 5px;
+    }
+}
+.skill_bar_container{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    .skill_bar_text{
+        font-size: 14px;
+        color:  #777777;
+        span{
+            float: right;
+        }
+    }
+    .skill_bar_background{
+        width: 100%;
+        height: 6px;
+        background-color: #666666;
+        margin-top: 20px;
+        position: relative;
+        .skill_bar{
+            /* float: left; */
+            height: 6px;
+            background-color: #31d181;
+            position: relative;
+            z-index: 999;
+        }
+    }
+}
+
+#bar1{
+    width: 95%;
+}
+#bar2{
+    width: 90%;
+}
+#bar3{
+    width: 80%;
+}
+#bar4{
+    width: 95%;
+}
+#bar5{
+    width: 95%;
+}
+#bar6{
+    width: 90%;
 }

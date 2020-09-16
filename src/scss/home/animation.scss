@@ -6,19 +6,52 @@
     display: none;
 }
 
-.move_to_left {
-    animation: slide_to_left 1.5s;
+.sliding_window_first_position{
+    left: -10%;
+}
+.sliding_window_second_position{
+    left: -100%;
+}
+.sliding_window_third_position{
+    left: -190%;
+}
+.sliding_window_fourth_position{
+    left: -280%;
+}
+
+.move_to_left_one_section {
+    animation: slide_to_left_one_section 1.5s;
+    animation-fill-mode:forwards;
+}
+
+.move_to_right_one_section {
+    animation: slide_to_right_one_section 1.5s;
+    animation-fill-mode:forwards;
+}
+
+.move_to_left_two_sections {
+    animation: slide_to_left_two_sections 1.5s;
+    animation-fill-mode:forwards;
+}
+
+.move_to_right_two_sections {
+    animation: slide_to_right_two_sections 1.5s;
+    animation-fill-mode:forwards;
+}
+
+.move_to_left_three_sections {
+    animation: slide_to_left_three_sections 1.5s;
     animation-fill-mode:forwards;
     transform-origin: left;
 }
 
-.move_to_right {
-    animation: slide_to_right 1.5s;
+.move_to_right_three_sections {
+    animation: slide_to_right_three_sections 1.5s;
     animation-fill-mode:forwards;
     transform-origin: right;
 }
 
-@keyframes slide_to_left {
+@keyframes slide_to_left_one_section {
     25% {
         transform: scale(0.8);
     }
@@ -26,7 +59,7 @@
         transform: translate(-25%);
     }
 }
-@keyframes slide_to_right {
+@keyframes slide_to_right_one_section {
     25% {
         transform: scale(0.8);
     }
@@ -35,4 +68,37 @@
     }
 }
 
+@keyframes slide_to_left_two_sections {
+    25% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: translate(-50%);
+    }
+}
+@keyframes slide_to_right_two_sections {
+    25% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: translate(50%);
+    }
+}
+
+@keyframes slide_to_left_three_sections {
+    25% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: translate(-75%);
+    }
+}
+@keyframes slide_to_right_three_sections {
+    25% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: translate(75%);
+    }
+}
 
